@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">In MAP</string>
+    <string name="counter">Counter</string>
+    <string name="get_location">Get Location</string>
+    <string name="latitude">Hello,Can I help You</string>
+    <string name="longitude">Longitude</string>
+    <string name="euclidean">Euclidean</string>
+    <string name="manhattan">Manhattan</string>
+    <string name="voice">Voice</string>
+    <string name="doornum">DoorNum</string>
+
+    <string name="getlocation_ToggleBox">GetLocation</string>
+    <string name="speak_button">Speak</string>
+    <string name="title_activity_main2">MainActivity2</string>
+
+
+    <string name="welcome">Welcome To In Map App</string>
+
+
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AddressLine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Euclidean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="504dp"
+        android:fontFamily="@font/cantarell"
+        android:text="@string/euclidean"
+        android:textColor="#696969"
+        android:textSize="25sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Manhattan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/manhattan"
+        android:textColor="#696969"
+        android:textSize="34sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Euclidean"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <Button
+        android:id="@+id/Speak"
+        android:layout_width="425dp"
+        android:layout_height="91dp"
+        android:background="#9BBA53"
+        android:onClick="voiceautomation"
+        android:text="@string/speak_button"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:backgroundTint="#9BBA53"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextContrastCheck" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="144dp"
+        android:layout_height="48dp"
+        android:background="#9BBA53"
+        android:scrollbarThumbVertical="@color/white"
+        android:text="@string/getlocation_ToggleBox"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#471E1E"
+        android:textColorLink="#501E1E"
+        android:textOff="GetLocation"
+        android:textOn="GetLocation"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.891"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/Voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="280dp"
+        android:text="@string/voice"
+        android:textSize="30sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/map"
+        android:layout_width="325dp"
+        android:layout_height="276dp"
+        android:layout_marginTop="224dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/map" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/accebt"
+        android:layout_width="325dp"
+        android:layout_height="311dp"
+        android:layout_marginTop="188dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/accebt" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/help"
+        android:layout_width="325dp"
+        android:layout_height="311dp"
+        android:layout_marginTop="188dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/help" />
+
+    <TextView
+        android:id="@+id/Latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cantarell"
+        android:text="@string/latitude"
+        android:textColor="#696969"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
